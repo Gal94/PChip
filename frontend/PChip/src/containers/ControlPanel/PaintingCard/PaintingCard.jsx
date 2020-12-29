@@ -15,7 +15,7 @@ const PaintingCard = (props) => (
                     <div className={classes.ImageContainer}>
                         <img
                             className={classes.Image}
-                            src={`https://localhost:5000/${props.image}`}
+                            src={`https://${process.env.REACT_APP_API_URL}/${props.image}`}
                             alt={props.name}
                         />
                     </div>
