@@ -1,0 +1,26 @@
+@media (min-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .inline-photo {
+    border: 1em solid #fff;
+    border-bottom: 4em solid #fff;
+    border-radius: 0.25em;
+    box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+    margin: 2em auto;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(4em) rotateZ(-5eg);
+    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+      opacity 0.3s 0.25s ease-out;
+    width: 90%;
+    /* prepare to animate the element */
+    will-change: transform, opacity;
+  }
+
+  .inline-photo.is-visible {
+    opacity: 1;
+    transform: rotateZ(-2deg);
+  }
+}

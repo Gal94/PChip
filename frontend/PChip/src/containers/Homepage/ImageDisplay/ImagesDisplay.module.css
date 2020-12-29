@@ -1,0 +1,93 @@
+.ImagesDisplay {
+    padding: 40px 16px 40px 16px;
+    background-color: #eeeeee;
+    position: relative;
+    min-height: 100vh;
+}
+
+.ImagesDisplayContainer {
+    display: block;
+}
+
+.Title {
+    color: #222831;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.Description {
+    margin-top: 2rem;
+}
+
+.DescriptionText {
+    color: #222831;
+    width: 20rem;
+    margin: 0.5rem auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 500px) {
+    .Description {
+        margin-top: 0;
+        padding: 24px 12px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .DescriptionText {
+        color: #222831;
+        width: 25rem;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ImagesDisplay {
+        padding: 12rem 5rem;
+        margin: 0 auto;
+        width: 100%;
+        min-height: fit-content;
+    }
+
+    .ImagesDisplayContainer {
+        display: flex;
+    }
+
+    .ContentContainer {
+        width: 50%;
+        height: 30rem;
+    }
+
+    .Title {
+        padding: 0;
+        margin-bottom: 5rem;
+        font-size: 1.8rem;
+    }
+
+    .Carousel {
+        width: 95%;
+        position: relative;
+        height: 100%;
+    }
+
+    .Description {
+        width: 40%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .DescriptionText {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        width: 90%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .DescriptionText {
+        font-size: 1.4rem;
+    }
+}

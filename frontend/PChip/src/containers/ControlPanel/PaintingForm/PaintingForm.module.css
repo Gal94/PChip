@@ -1,0 +1,24 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.FormCard {
+  height: 95%;
+  margin: 3% auto;
+  padding: 8px;
+  background-color: rgba(202, 202, 202, 0.226);
+  border-radius: 6px;
+  width: 95%;
+}
+
+.ImageCenter {
+  margin: 0 auto;
+}
+
+.Center {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px auto 0;
+}

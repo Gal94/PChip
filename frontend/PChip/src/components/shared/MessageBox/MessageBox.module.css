@@ -1,0 +1,15 @@
+.ErrorContainer {
+    border: 1px solid red;
+    background: #fc9d9d;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.emailSent {
+    border: 2px solid #ffd369;
+    background: rgb(255, 255, 255);
+}
+
+.ErrorText {
+    font-size: 13px;
+}

@@ -1,0 +1,61 @@
+.InputCard {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+    color: #ffd369;
+}
+
+.Input {
+    outline: none;
+    border: 4px solid transparent;
+    border-radius: 2px;
+    font: inherit;
+    padding: 6px 4px;
+    display: block;
+    width: 100%;
+    margin: 6px 0 24px;
+    white-space: pre-line;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    transition: border 0.3 ease;
+}
+
+.TextArea {
+    outline: none;
+    border: 4px solid transparent;
+    resize: none;
+    border-radius: 6px;
+    font: inherit;
+    padding: 6px 4px;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    white-space: pre-line;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border 0.3 ease;
+}
+
+.InputCard:focus-within {
+    transform: scale(1.03, 1.03);
+}
+
+.Input:focus,
+.TextArea:focus {
+    border: 4px solid;
+    border-color: #ffd369;
+    outline: none;
+}
+
+@media (min-width: 650px) {
+    .Label {
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+}

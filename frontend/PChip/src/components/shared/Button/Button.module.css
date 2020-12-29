@@ -1,0 +1,161 @@
+.Button {
+    padding: 0.8rem 0;
+    width: 6rem;
+    background-color: transparent;
+    border: 1px solid #ffd369;
+    color: #ffd369;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.IconButton {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.Button:focus,
+.IconButton:focus {
+    outline: none;
+}
+
+.Create {
+    border-color: #ffd369;
+    color: #ffd369;
+    width: 4rem;
+}
+
+.Edit {
+    border-color: #ffd369;
+    color: #ffd369;
+}
+
+.Cancel {
+    padding: 0.8rem 0;
+    width: 6rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 5px;
+    text-align: center;
+    color: red;
+    border-color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.Login,
+.ChangePassword {
+    background-color: #ffd369;
+    color: #323232;
+    width: 100%;
+    margin-left: 0;
+    transition: all 0.3s;
+}
+
+.ChangePassword {
+    margin-bottom: 12px;
+}
+
+.Login:hover,
+.Login:active,
+.ChangePassword:hover,
+.ChangePassword:active {
+    color: #ffd369;
+    background-color: #eeeeee;
+}
+
+.Reset {
+    text-decoration: none;
+    color: #393e46;
+    background-color: #ffd369;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.Reset:hover,
+.Reset:active {
+    color: #ffd369;
+    border: none;
+    background-color: #eeeeee;
+}
+
+.PostBtn {
+    transition: all 0.2s ease-in;
+    border: 2px solid #ffd369;
+    color: #ffd369;
+    padding: 0;
+    height: fit-content;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 500px) {
+    .Button:hover {
+        color: #323232;
+        background-color: #ffd369;
+    }
+
+    .PostBtn:hover {
+        transform: scale(1.05, 1.05);
+        color: #393e46;
+        background-color: #ffd369;
+    }
+
+    .Edit:hover {
+        background-color: #ffd369;
+        color: white;
+    }
+
+    .Cancel:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .Create:hover {
+        background-color: #ffd369;
+        border-color: white;
+        color: white;
+    }
+
+    .Login:hover,
+    .Login:active,
+    .ChangePassword:hover,
+    .ChangePassword:active {
+        color: #323232;
+        background-color: #ffd369;
+    }
+
+    .Reset {
+        color: #ffd369;
+    }
+
+    .Reset:hover,
+    .Reset:active {
+        color: #ffd369;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 650px) {
+    .Login {
+        margin-top: 8px;
+    }
+
+    .Reset {
+        margin-top: 22px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,115 @@
+.Card {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    /* border-radius: 4px; */
+    /* box-shadow: 0.8px 0.8px 1px 1px rgb(172, 170, 170); */
+}
+
+.imageTab {
+    height: 7.5rem;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageTab::after {
+    content: '';
+    width: 100%;
+    height: 7.5rem;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.loginImage {
+    background-image: url('./login-image.jpg');
+    background-size: cover;
+    background-position: 0px -15px;
+}
+
+.noImage {
+    display: none;
+}
+
+.teamCard {
+    height: 15rem;
+}
+
+.cardTitle {
+    color: white;
+    position: relative;
+    text-align: center;
+    z-index: 4;
+}
+
+.contentTab {
+    padding: 16px;
+    height: 100%;
+    position: relative;
+    background-color: #222831;
+}
+
+.PostCard {
+    margin: 16px;
+}
+
+.PaintingCard {
+    padding: 16px 8px;
+    padding-bottom: 16px;
+    background-color: rgba(31, 25, 25, 0.884);
+    height: 5rem;
+}
+
+.LoginCard {
+    background-color: #222831;
+}
+
+@media (min-width: 650px) {
+    .Card {
+        height: 35rem;
+    }
+
+    .contentTab {
+        height: initial;
+    }
+
+    .imageTab {
+        height: 12rem;
+    }
+
+    .imageTab::after {
+        height: 12rem;
+    }
+
+    .cardTitle {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .loginImage {
+        background-position: 0px -45px;
+    }
+
+    .PostCard {
+        height: fit-content;
+    }
+
+    .teamCard {
+        height: fit-content;
+    }
+}
+
+/* Admin control panel cards */
+@media (min-width: 840px) {
+    .PaintingCard {
+        height: 100%;
+    }
+}

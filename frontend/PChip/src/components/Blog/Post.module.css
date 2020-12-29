@@ -1,0 +1,128 @@
+.CardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Info {
+    width: 50%;
+}
+
+.Title {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    color: #eeeeee;
+    text-shadow: -0.2px -0.2px rgba(90, 107, 161, 0.342);
+}
+
+.SubInfo {
+    margin: 4px 0;
+    font-size: 0.7rem;
+    color: #eeeeee;
+}
+
+.Edit {
+    color: orange;
+    margin: 0;
+}
+
+.Delete {
+    color: red;
+}
+
+.ContentWrapper {
+    color: #eeeeee;
+    font-size: 0.8rem;
+    max-height: 20px;
+}
+
+.More {
+    text-align: center;
+    height: fit-content;
+    padding: 8px 0;
+}
+
+.Circle {
+    margin: 0 4px;
+    color: #eeeeee;
+    height: 100%;
+    transition: all 0.5;
+}
+
+.Half {
+    margin-bottom: 16px;
+}
+
+.Full {
+    z-index: 9;
+    max-height: 900px;
+    transition: max-height 1s;
+}
+
+.ContentExpand {
+    animation: blink 1.5s;
+}
+
+.Paragraph {
+    white-space: pre-line;
+}
+
+.ImageDiv {
+    width: 100%;
+}
+
+.Image {
+    width: inherit;
+    display: none;
+}
+
+.ShowImage {
+    display: block;
+    animation: blink 1.5s;
+}
+
+@media (min-width: 500px) {
+    .Title {
+        font-size: 1.4rem;
+    }
+
+    .ContentWrapper {
+        font-size: 1.2rem;
+    }
+
+    .More {
+        cursor: pointer;
+    }
+
+    .ImageDiv {
+        max-width: 100%;
+        margin: 12px auto;
+    }
+
+    .Image {
+        object-fit: fill;
+        max-height: 750px;
+    }
+
+    .Circle {
+        transition: all 0.2s;
+    }
+    .More:hover .Circle {
+        color: #ffd369;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 1;
+    }
+}

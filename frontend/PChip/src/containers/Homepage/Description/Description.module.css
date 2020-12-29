@@ -1,0 +1,96 @@
+.DescriptionContainer {
+    margin: 0;
+    padding: 2em 24px 0;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    background: linear-gradient(to bottom, #393e46 0%, #393e46 100%), #393e46;
+}
+
+.TextContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.DescriptionTitle {
+    padding: 0px;
+    color: #ffd369;
+    font-size: 38px;
+}
+
+.perks {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.perk {
+    width: 40%;
+    margin-right: 1rem;
+}
+
+.perkTitle {
+    color: #ffd369;
+    font-size: 16px;
+    margin: 0;
+}
+
+.perkDescription {
+    color: white;
+    padding-right: 4px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+    .DescriptionContainer {
+        min-height: fit-content;
+        padding: 17rem 5rem;
+        height: 55rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .TextContainer {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .DescriptionTitle {
+        /* font-size: 22rem; */
+        padding-bottom: 8px;
+        width: 40%;
+        margin-right: 5rem;
+    }
+
+    .perks {
+        width: 30rem;
+    }
+
+    .perk {
+        width: 30%;
+        margin-right: 1rem;
+    }
+
+    .perkDescription {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1300px) {
+    .DescriptionTitle {
+        width: 30%;
+    }
+    .perks {
+        width: 40rem;
+    }
+
+    .DescriptionTitle {
+        padding-bottom: 8px;
+    }
+}

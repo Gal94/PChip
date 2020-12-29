@@ -1,0 +1,49 @@
+.Page {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    min-height: 100vh;
+    background-color: #393e46;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.PageContainer {
+    margin: 0 12px;
+}
+.PageTitle {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ffd369;
+}
+
+.PageText {
+    text-align: center;
+    line-height: 2px;
+    color: #eeeeee;
+}
+
+.ImageContainer {
+    margin-top: 2rem;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+.Image {
+    max-width: 100%;
+}
+
+.Card {
+    margin: 18px 0;
+}
+
+.Paintings {
+    margin-top: 24px;
+}
+
+.Center {
+    margin: 0 auto;
+    width: fit-content;
+}

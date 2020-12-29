@@ -1,0 +1,46 @@
+.NavigationItems {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    flex-flow: row;
+    list-style: none;
+    align-items: center;
+    height: 56px;
+}
+
+.Logout {
+    height: 100%;
+}
+
+.LogoutButton {
+    color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-bottom: 4px solid transparent;
+    padding: 8px;
+    height: 100%;
+    text-decoration: none;
+    background-color: inherit;
+    font-size: 0.8rem;
+}
+
+.LogoutButton:hover {
+    background-color: #ffd36925;
+    border-color: #ffd369;
+    color: white;
+}
+
+@media screen and (min-width: 500px) {
+    .LogoutButton {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .LogoutButton:hover {
+        background-color: #ffd36925;
+        border-bottom: 4px solid #ffd369;
+        color: rgb(255, 255, 255);
+    }
+}

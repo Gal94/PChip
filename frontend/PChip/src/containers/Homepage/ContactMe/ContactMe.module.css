@@ -1,0 +1,59 @@
+.ContactMeContainer {
+    /* background-color: #414141; */
+    color: white;
+    position: relative;
+    height: fit-content;
+    padding-bottom: 25px;
+}
+.ContactMeContainer::after {
+    background: #222831;
+    z-index: -1;
+    bottom: 0;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.FormContainer {
+    padding: 16px;
+}
+
+@media (min-width: 500px) {
+    .Text {
+        font-size: 1.1rem;
+        text-shadow: -0.5px -0.5px rgba(39, 39, 39, 0.8);
+    }
+    .Form {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1300px) {
+    .ContactMeContainer {
+        padding: 64px;
+        padding-left: 10%;
+    }
+
+    .Form {
+        margin: initial;
+        width: initial;
+    }
+
+    .FormContainer {
+        margin-left: auto;
+    }
+
+    .Title {
+        font-size: 2.5rem;
+    }
+
+    .Text {
+        font-size: 1.4rem;
+    }
+
+    .Form {
+        padding-left: 5%;
+    }
+}

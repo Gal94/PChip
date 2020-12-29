@@ -1,0 +1,33 @@
+.more-info {
+    display: none;
+}
+
+@media (min-width: 1300px) {
+    .more-info {
+        overflow-x: hidden;
+        display: initial;
+        color: red;
+        background: #ffd369;
+        box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        -webkit-transform: rotateZ(-5deg) translateX(500px);
+        transform: rotateZ(-5deg) translateX(500px);
+        transition: all 0.5s 0.5s cubic-bezier(0, 1, 0.3, 1);
+        width: 400px;
+        z-index: 10;
+        color: #393e46;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .text {
+        padding: 0.5em 50px 0.5em 1em;
+    }
+
+    .more-info.is-visible {
+        -webkit-transform: rotateZ(-7deg) translateX(-10%);
+        transform: rotateZ(-7deg) translateX(-10%);
+        height: 20rem;
+    }
+}

@@ -1,0 +1,108 @@
+.Slider {
+    width: 250px;
+    box-sizing: border-box;
+    max-height: 25rem;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.Btn {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 30rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.goLeft {
+    left: 0;
+    height: 200px;
+}
+
+.goRight {
+    right: 0;
+    height: 200px;
+}
+
+.img {
+    height: 200px;
+    width: 250px;
+}
+
+.infoDiv {
+    background-color: #393e46;
+    border-radius: 7px;
+    height: 5rem;
+    margin-top: -8px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: #ffd369;
+    margin-bottom: 0;
+}
+
+.positionInfo {
+    font-size: 16px;
+}
+
+@media (min-width: 500px) {
+    .Slider {
+        width: 400px;
+        max-height: fit-content;
+    }
+
+    .Btn {
+        width: 15%;
+        top: 175px;
+        height: 350px;
+        background-color: transparent;
+    }
+
+    .Btn:hover {
+        background-color: rgba(241, 239, 239, 0.493);
+        color: rgba(0, 0, 0, 0.836);
+        cursor: pointer;
+    }
+
+    .img {
+        height: 350px;
+        width: 400px;
+    }
+
+    .infoDiv {
+        height: 5rem;
+        width: 400px;
+        margin-top: -8px;
+        padding-top: 12px;
+        text-align: center;
+    }
+
+    .goRight {
+        right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Slider {
+        float: right;
+    }
+}
